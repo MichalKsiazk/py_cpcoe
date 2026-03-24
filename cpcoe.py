@@ -109,7 +109,7 @@ def holding32_to_real(lreg, rreg):
 
     return round(struct.unpack('>f', res)[0], 2)
 
-class ModbusDataChunk:
+class CPCOE_ModbusDataChunk:
     def __init__(self, map_filepath:str, map_filename:str, client:ModbusSerialClient, dev_address:int):
 
         cpath = map_filepath + map_filename
@@ -248,9 +248,9 @@ class CPCOE_Device:
 
         self.client.connect()
 
-        self.io_config = ModbusDataChunk('cpcoe/', 'cpcoe_io_config.json', self.client, self.dev_address)
-        self.io_vals = ModbusDataChunk('cpcoe/', 'cpcoe_io_vals.json', self.client, self.dev_address)
-        self.io_errors = ModbusDataChunk('cpcoe/', 'cpcoe_io_errors.json', self.client, self.dev_address)
+        self.io_config = CPCOE_ModbusDataChunk('cpcoe/', 'cpcoe_io_config.json', self.client, self.dev_address)
+        self.io_vals = CPCOE_ModbusDataChunk('cpcoe/', 'cpcoe_io_vals.json', self.client, self.dev_address)
+        self.io_errors = CPCOE_ModbusDataChunk('cpcoe/', 'cpcoe_io_errors.json', self.client, self.dev_address)
 
         self.io_config.read_data_block(address)
 
