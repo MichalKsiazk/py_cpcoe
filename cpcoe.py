@@ -291,12 +291,10 @@ class CPCOE_Device:
     def set_digital_output(self, output_num:int, value:bool, save:bool=False):
         """
             Set digital output channel state
-
             Args:
                 output_num (int): output id
                 value (bool): output state
                 save (bool)(optional): save io device memory immediately after changing value
-
         """
         chname =  "DOutVals[" + str(output_num) + "]"
         self.io_vals.set_var_by_name(chname, value, save=save)
@@ -304,10 +302,8 @@ class CPCOE_Device:
     def get_univ_ch_val(self, chnum:int):
         """
             Get the value from universal channel
-
             Args:
                 chnum (int): channel number
-
         """
         chname =  "UnivChsVals[" + str(chnum) + "]"
         for v in self.io_vals.var_table:
@@ -318,7 +314,6 @@ class CPCOE_Device:
     def set_univ_ch_val(self, chnum:int, value):
         """
             Set value of universal channel
-
             Args:
                 chnum (int): channel number
                 value : value to set
