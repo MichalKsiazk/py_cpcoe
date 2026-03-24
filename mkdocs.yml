@@ -1,0 +1,16 @@
+site_name: pycpcoe
+
+nav:
+  - Home: index.md
+  - Examples: example.md
+  - Source: source.md
+
+theme:
+  name: material
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: false

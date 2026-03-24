@@ -1,0 +1,25 @@
+{
+    "name": "cpcoe_io_vals",
+    "type": "holding",
+
+
+    "var_table": [            
+            {"name": "UnivChsVals[1]", "addr": 51, "len": 2, "type": "float32", "value": 0},
+            {"name": "UnivChsVals[2]", "addr": 53, "len": 2, "type": "float32", "value": 0},
+            {"name": "UnivChsVals[3]", "addr": 55, "len": 2, "type": "float32", "value": 0},
+            {"name": "UnivChsVals[4]", "addr": 57, "len": 2, "type": "float32", "value": 0},
+            {"name": "UnivChsVals[5]", "addr": 59, "len": 2, "type": "float32", "value": 0},
+            {"name": "UnivChsVals[6]", "addr": 61, "len": 2, "type": "float32", "value": 0},
+            {"name": "UnivChsVals[7]", "addr": 63, "len": 2, "type": "float32", "value": 0},
+            {"name": "UnivChsVals[8]", "addr": 65, "len": 2, "type": "float32", "value": 0},
+            {"name": "UnivChsVals[9]", "addr": 67, "len": 2, "type": "float32", "value": 0},
+            {"name": "UnivChsVals[10]", "addr": 69, "len": 2, "type": "float32", "value": 0},
+            {"name": "DOutVals[1]", "addr": 71, "len": 1, "type": "uint16", "value": 0},
+            {"name": "DOutVals[2]", "addr": 72, "len": 1, "type": "uint16", "value": 0},
+            {"name": "DOutVals[3]", "addr": 73, "len": 1, "type": "uint16", "value": 0},
+            {"name": "DOutVals[4]", "addr": 74, "len": 1, "type": "uint16", "value": 0},
+            {"name": "DOutVals[5]", "addr": 75, "len": 1, "type": "uint16", "value": 0},
+            {"name": "DOutVals[6]", "addr": 76, "len": 1, "type": "uint16", "value": 0},
+            {"name": "ChkDevPres", "addr": 77, "len": 2, "type": "float32", "value": 0}
+    ]
+}

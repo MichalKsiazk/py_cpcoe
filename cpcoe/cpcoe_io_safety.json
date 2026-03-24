@@ -1,0 +1,40 @@
+{
+    "name": "cpcoe_io_safety",
+    "type": "holding",
+
+    "var_table": [
+            {"name": "UnivChs[1].EnSafeMode", "addr": 209, "len": 1, "type": "bool", "value":0},
+            {"name": "UnivChs[2].EnSafeMode", "addr": 210, "len": 1, "type": "bool", "value":0},
+            {"name": "UnivChs[3].EnSafeMode", "addr": 211, "len": 1, "type": "bool", "value":0},
+            {"name": "UnivChs[4].EnSafeMode", "addr": 212, "len": 1, "type": "bool", "value":0},
+            {"name": "UnivChs[5].EnSafeMode", "addr": 213, "len": 1, "type": "bool", "value":0},
+            {"name": "UnivChs[6].EnSafeMode", "addr": 214, "len": 1, "type": "bool", "value":0},
+            {"name": "UnivChs[7].EnSafeMode", "addr": 215, "len": 1, "type": "bool", "value":0},
+            {"name": "UnivChs[8].EnSafeMode", "addr": 216, "len": 1, "type": "bool", "value":0},
+            {"name": "UnivChs[9].EnSafeMode", "addr": 217, "len": 1, "type": "bool", "value":0},
+            {"name": "UnivChs[10].EnSafeMode", "addr": 218, "len": 1, "type": "bool", "value":0},
+            {"name": "DOuts[1].EnSafeMode", "addr": 219, "len": 1, "type": "bool", "value":0},
+            {"name": "DOuts[2].EnSafeMode", "addr": 220, "len": 1, "type": "bool", "value":0},
+            {"name": "DOuts[3].EnSafeMode", "addr": 221, "len": 1, "type": "bool", "value":0},
+            {"name": "DOuts[4].EnSafeMode", "addr": 222, "len": 1, "type": "bool", "value":0},
+            {"name": "DOuts[5].EnSafeMode", "addr": 223, "len": 1, "type": "bool", "value":0},
+            {"name": "DOuts[6].EnSafeMode", "addr": 224, "len": 1, "type": "bool", "value":0},
+            {"name": "UnivChs[1].OfflinePattern", "addr": 227, "len": 2, "type": "float32", "value":0},
+            {"name": "UnivChs[2].OfflinePattern", "addr": 229, "len": 2, "type": "float32", "value":0},
+            {"name": "UnivChs[3].OfflinePattern", "addr": 231, "len": 2, "type": "float32", "value":0},
+            {"name": "UnivChs[4].OfflinePattern", "addr": 233, "len": 2, "type": "float32", "value":0},
+            {"name": "UnivChs[5].OfflinePattern", "addr": 235, "len": 2, "type": "float32", "value":0},
+            {"name": "UnivChs[6].OfflinePattern", "addr": 237, "len": 2, "type": "float32", "value":0},
+            {"name": "UnivChs[7].OfflinePattern", "addr": 239, "len": 2, "type": "float32", "value":0},
+            {"name": "UnivChs[8].OfflinePattern", "addr": 241, "len": 2, "type": "float32", "value":0},
+            {"name": "UnivChs[9].OfflinePattern", "addr": 243, "len": 2, "type": "float32", "value":0},
+            {"name": "UnivChs[10].OfflinePattern", "addr": 245, "len": 2, "type": "float32", "value":0},
+            {"name": "DOuts[1].OfflinePattern", "addr": 247, "len": 1, "type": "bool", "value":0},
+            {"name": "DOuts[2].OfflinePattern", "addr": 248, "len": 1, "type": "bool", "value":0},
+            {"name": "DOuts[3].OfflinePattern", "addr": 249, "len": 1, "type": "bool", "value":0},
+            {"name": "DOuts[4].OfflinePattern", "addr": 250, "len": 1, "type": "bool", "value":0},
+            {"name": "DOuts[5].OfflinePattern", "addr": 251, "len": 1, "type": "bool", "value":0},
+            {"name": "DOuts[6].OfflinePattern", "addr": 252, "len": 1, "type": "bool", "value":0}        
+        ]
+
+}

@@ -1,0 +1,17 @@
+{
+    "name": "cpcoe_io_errors",
+    "type": "input",
+
+    "var_table": [
+            {"name": "Errors_CPCOE[1]", "addr": 83, "len": 1, "type": "uint16", "value": 0},
+            {"name": "Errors_CPCOE[2]", "addr": 84, "len": 1, "type": "uint16", "value": 0},
+            {"name": "Errors_CPCOE[3]", "addr": 85, "len": 1, "type": "uint16", "value": 0},
+            {"name": "Errors_CPCOE[4]", "addr": 86, "len": 1, "type": "uint16", "value": 0},
+            {"name": "Errors_CPCOE[5]", "addr": 87, "len": 1, "type": "uint16", "value": 0},
+            {"name": "Errors_CPCOE[6]", "addr": 88, "len": 1, "type": "uint16", "value": 0},
+            {"name": "Errors_CPCOE[7]", "addr": 89, "len": 1, "type": "uint16", "value": 0},
+            {"name": "Errors_CPCOE[8]", "addr": 90, "len": 1, "type": "uint16", "value": 0},
+            {"name": "Errors_CPCOE[9]", "addr": 91, "len": 1, "type": "uint16", "value": 0},
+            {"name": "Errors_CPCOE[10]", "addr": 92, "len": 1, "type": "uint16", "value": 0}
+        ]
+}
