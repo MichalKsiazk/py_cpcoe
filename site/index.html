@@ -280,15 +280,232 @@
 <p>Documentation for Carel c.pcoe io extension module python port.</p>
 <h2 id="usage">USAGE</h2>
 <hr />
-<p>!!! info "CPCOE_CHDIR enum"
-    :collapse:</p>
-<pre><code>    ::: cpcoe.CPCOE_CHDIR
-        options:
-            members: true
-            show_source: false
-            show_root_heading: true
-</code></pre>
-<hr />
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="cpcoe.CPCOE_Device" class="doc doc-heading">
+            <code>cpcoe.CPCOE_Device</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="cpcoe.CPCOE_Device.__init__" class="doc doc-heading">
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">address</span><span class="p">,</span> <span class="n">com_port</span><span class="p">,</span> <span class="n">data_maps_path</span><span class="o">=</span><span class="s1">&#39;devices/&#39;</span><span class="p">,</span> <span class="n">baudrate</span><span class="o">=</span><span class="mi">19200</span><span class="p">,</span> <span class="n">bytesize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">parity</span><span class="o">=</span><span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="n">stopbits</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Class for handling Carel c.pcoe IO module
+Args:
+    address (int): Modbus address (1-255)
+    com_port (str): USB port for RS-485 connection
+    data_maps_path (str)(optional): relative path for modbus json config files
+    baudrate (int)(optional): RS-485 baudrate</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="cpcoe.CPCOE_Device.get_univ_ch_val" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">get_univ_ch_val</span><span class="p">(</span><span class="n">chnum</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Get the value from universal channel
+Args:
+    chnum (int): channel number</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="cpcoe.CPCOE_Device.set_digital_output" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_digital_output</span><span class="p">(</span><span class="n">output_num</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">save</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Set digital output channel state
+Args:
+    output_num (int): output id
+    value (bool): output state
+    save (bool)(optional): save io device memory immediately after changing value</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="cpcoe.CPCOE_Device.set_univ_ch_val" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_univ_ch_val</span><span class="p">(</span><span class="n">chnum</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Set value of universal channel
+Args:
+    chnum (int): channel number
+    value : value to set</p>
+
+
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div><hr />
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="cpcoe.CPCOE_CHDIR" class="doc doc-heading">
+            <code>cpcoe.CPCOE_CHDIR</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="enum.Enum">Enum</span></code></p>
+
+
+
+        <p>Enumerator for setting the direction of universal channel</p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="cpcoe.CPCOE_CHDIR.INPUT" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">INPUT</span> <span class="o">=</span> <span class="mi">0</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Output type</p>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="cpcoe.CPCOE_CHDIR.OUTPUT" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">OUTPUT</span> <span class="o">=</span> <span class="mi">1</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Input type</p>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><hr />
 
 
 <div class="doc doc-object doc-class">
@@ -803,6 +1020,29 @@
 
 
 
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="cpcoe.CPCOE_Device.__init__" class="doc doc-heading">
+            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">address</span><span class="p">,</span> <span class="n">com_port</span><span class="p">,</span> <span class="n">data_maps_path</span><span class="o">=</span><span class="s1">&#39;devices/&#39;</span><span class="p">,</span> <span class="n">baudrate</span><span class="o">=</span><span class="mi">19200</span><span class="p">,</span> <span class="n">bytesize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">parity</span><span class="o">=</span><span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="n">stopbits</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Class for handling Carel c.pcoe IO module
+Args:
+    address (int): Modbus address (1-255)
+    com_port (str): USB port for RS-485 connection
+    data_maps_path (str)(optional): relative path for modbus json config files
+    baudrate (int)(optional): RS-485 baudrate</p>
+
+
+    </div>
+
+</div>
 
 <div class="doc doc-object doc-function">
 

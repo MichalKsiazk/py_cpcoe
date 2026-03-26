@@ -227,12 +227,12 @@ class CPCOE_ModbusDataChunk:
 class CPCOE_Device:
     def __init__(self, address:int, com_port, data_maps_path='devices/', baudrate=19200, bytesize=8, parity='N', stopbits=1):
         """
-            Class for handling Carel c.pcoe IO module
-            Args:
-                address (int): Modbus address (1-255)
-                com_port (str): USB port for RS-485 connection
-                data_maps_path (str)(optional): relative path for modbus json config files
-                baudrate (int)(optional): RS-485 baudrate
+        Class for handling Carel c.pcoe IO module
+        Args:
+            address (int): Modbus address (1-255)
+            com_port (str): USB port for RS-485 connection
+            data_maps_path (str)(optional): relative path for modbus json config files
+            baudrate (int)(optional): RS-485 baudrate
 
         """
 
